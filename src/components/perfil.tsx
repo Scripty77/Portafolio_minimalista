@@ -13,8 +13,8 @@ export default function Perfil() {
         area: "Estudiante Ing en Informatica Futuro Backend Dev",
     };
     return (
-        <div className="p-10">
-            <div className="border-5 bg-orange-50 text-center min-w-[260px] max-w-xs">
+        <div className="px-4 py-6 sm:px-8 md:px-10 lg:px-16 w-full flex justify-center">
+            <div className="border-5 bg-orange-50 text-center w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl ">
                 {/* Barra superior tipo terminal */}
                 <div className="flex items-center justify-between h-9 px-4 bg-black border-b-2 ">
                     <div className="flex items-center gap-2">

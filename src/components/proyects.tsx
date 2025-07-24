@@ -29,8 +29,8 @@ const projects = [
 
 export default function Proyects() {
     return (
-        <div className="flex flex-col items-end justify-start p-10 w-full h-full">
-            <div className="border-5 bg-orange-50 text-center w-[60vw] min-h-[60vh]">
+        <div className="flex flex-col items-end justify-start px-4 py-6 sm:px-8 md:px-1 lg:px-1 w-full h-full">
+            <div className="border-5 bg-orange-50 text-center w-full max-w-6xl min-h-[60vh]">
                 {/* Barra superior tipo terminal */}
                 <div className="flex items-center justify-between h-9 px-4 bg-black border-b-2 border-gray-800 ">
                     <div className="flex items-center gap-2">
@@ -40,12 +40,12 @@ export default function Proyects() {
                     </div>
                     <span className="text-white text-xs font-mono">.....</span>
                 </div>
-                <div className="p-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-7 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {projects.map((project) => (
                         <div key={project.name} className="bg-white border border-gray-400 rounded-lg shadow-md p-5 flex flex-col items-start gap-2 text-left">
-                            <div className="flex items-center justify-between w-full">
+                            <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-2">
                                 <span className="font-bold text-lg text-gray-800">{project.name}</span>
-                                <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="mt-2 md:mt-0 md:ml-2 self-start md:self-center">
                                     <FaGithub size={24} className="text-gray-700 hover:text-black" />
                                 </a>
                             </div>

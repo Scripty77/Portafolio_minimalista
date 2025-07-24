@@ -1,12 +1,8 @@
-import { CiPower } from "react-icons/ci";
 import { BsPcDisplay } from "react-icons/bs";
 import { FaFirefox } from "react-icons/fa";
 import { GoFileSubmodule } from "react-icons/go";
 import { FaSpotify } from "react-icons/fa";
-import { FiBatteryCharging } from "react-icons/fi";
 import "../App.css";
-
-
 
 
 export default function Header() {
@@ -17,26 +13,21 @@ export default function Header() {
     }
 
     return( 
-        <div className="flex flex-col items-center p-7">
-            <div className="p-4 bg-orange-50 border-5 w-5/6 rounded-2xl flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                    <BsPcDisplay size={23} />
-                    <span className="text-xl font-bold">Raiku-dev</span>
-                    <div className="flex items-center gap-3 ml-6">
+        <div className="flex flex-col items-center px-4 py-6 w-full">
+            <div className="bg-orange-50 border-5 rounded-2xl w-full max-w-3xl flex flex-col md:flex-row items-center justify-between p-4">
+                <div className="flex flex-col md:flex-row items-center gap-4 w-full">
+                    <div className="flex flex-row items-center justify-center gap-6 w-full flex-wrap">
+                        <BsPcDisplay size={20} className="min-w-0" />
+                        <span className="text-xl font-bold">Raiku-dev</span>
                         <FaFirefox size={20} />
                         <GoFileSubmodule size={20} />
-                        <FaSpotify  size={20}/>
+                        <FaSpotify size={20} />
                         <div className="overflow-hidden w-40 h-6 relative">
-                          <span className="block whitespace-nowrap animate-marquee text-sm text-gray-700 will-change-transform">
-                            {music.artist} - {music.name}
-                          </span>
+                            <span className="block whitespace-nowrap animate-marquee text-sm text-gray-700 will-change-transform">
+                                {music.artist} - {music.name}
+                            </span>
                         </div>
                     </div>
-                </div>
-                <div className="flex items-center gap-1 ml-4">
-                    <FiBatteryCharging size={23} />
-                    <span className="text-sm font-semibold">100%</span>
-                    <CiPower size={20} />
                 </div>
             </div>
         </div>

@@ -10,15 +10,15 @@ function App() {
   return (
     <>
       <Header />
-      <div className='flex flex-row'>
-        <div className='basis-1/3'>
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="md:basis-1/3 w-full">
           <Perfil/>
         </div>
-        <div className='basis-1/3'>
+        <div className="md:basis-1/3 w-full">
           <Proyects/>
         </div>
-        <div className='basis-1/3'>
-        <Tecnologies/>
+        <div className="md:basis-1/3 w-full">
+          <Tecnologies/>
         </div>
       </div>
       <div>
