@@ -3,7 +3,6 @@ export default function Tecnologies() {
         "JavaScript",
         "TypeScript",
         "Java",
-        "Node.js",
         "SQL",
         "Docker",
     ];

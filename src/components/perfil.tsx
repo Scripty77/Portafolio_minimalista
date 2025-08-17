@@ -5,12 +5,12 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Perfil() {
     const profile = {
         name: "Raiku",
-        level: 25,
+        level: 24,
         bio: "Apasionado por la Tecnologia y Todas las Posibilidades con Ella, agil y adaptable",
         avatar: "",
         github: "https://github.com/Scripty77",
         linkedin: "https://www.linkedin.com/in/jean-carlos-contreras-485485279/",
-        area: "Estudiante Ing en Informatica Futuro Backend Dev",
+        area: "Estudiante Ing en Informatica",
     };
     return (
         <div className="px-4 py-6 sm:px-8 md:px-10 lg:px-16 w-full flex justify-center">
