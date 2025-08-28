@@ -16,29 +16,29 @@ import { FaLinux } from "react-icons/fa";
 
 export default function Tecnologies() {
     const Langs = [
-        <IoLogoJavascript size={40}/>,
-        <SiTypescript size={40}/>,
-        <FaPython size={40}/>,
-        <FaJava size={40}/>,
-        <FaCss3Alt size={40}/>,
-        <FaHtml5 size={40}/>
+        { id: "javascript", icon: <IoLogoJavascript size={40}/> },
+        { id: "typescript", icon: <SiTypescript size={40}/> },
+        { id: "python", icon: <FaPython size={40}/> },
+        { id: "java", icon: <FaJava size={40}/> },
+        { id: "css3", icon: <FaCss3Alt size={40}/> },
+        { id: "html5", icon: <FaHtml5 size={40}/> }
     ];
 
     const Frameworks = [
-        <FaReact size={40}/>,
-        <SiNestjs size={40}/>,
-        <SiSpring size={40}/>
+        { id: "react", icon: <FaReact size={40}/> },
+        { id: "nestjs", icon: <SiNestjs size={40}/> },
+        { id: "spring", icon: <SiSpring size={40}/> }
     ];
 
     const Database = [
-        <BiLogoPostgresql size={40}/>,
-        <GrMysql size={40}/>
+        { id: "postgresql", icon: <BiLogoPostgresql size={40}/> },
+        { id: "mysql", icon: <GrMysql size={40}/> }
     ]
 
     const Tools = [
-        <FaDocker size={40}/>,
-        <FaGitAlt size={40}/>,
-        <FaLinux size={40}/>
+        { id: "docker", icon: <FaDocker size={40}/> },
+        { id: "git", icon: <FaGitAlt size={40}/> },
+        { id: "linux", icon: <FaLinux size={40}/> }
     ]
 
     return (
@@ -57,8 +57,8 @@ export default function Tecnologies() {
                     <div className="text-lg font-bold mb-4 text-gray-800">Langs</div>
                     <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
                         {Langs.map((tech) => (
-                            <li key={tech} className="bg-gray-100 px-2 py-2 rounded-full text-sm text-gray-700 font-mono">
-                                {tech}
+                            <li key={tech.id} className="bg-gray-100 px-2 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                {tech.icon}
                             </li>
                         ))}
                     </ul>
@@ -66,8 +66,8 @@ export default function Tecnologies() {
                         <div className="text-lg font-bold mb-2 text-gray-800">Frameworks</div>
                         <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
                             {Frameworks.map((framework) => (
-                                <li key={framework} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
-                                    {framework}
+                                <li key={framework.id} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {framework.icon}
                                 </li>
                             ))}
                         </ul>
@@ -76,8 +76,8 @@ export default function Tecnologies() {
                         <div className="text-lg font-bold mb-2 text-gray-800">Database</div>
                         <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
                             {Database.map((db) => (
-                                <li key={db} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
-                                    {db}
+                                <li key={db.id} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {db.icon}
                                 </li>
                             ))}
                         </ul>
@@ -86,8 +86,8 @@ export default function Tecnologies() {
                         <div className="text-lg font-bold mb-2 text-gray-800">Tools</div>
                         <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
                             {Tools.map((tool) => (
-                                <li key={tool} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
-                                    {tool}
+                                <li key={tool.id} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {tool.icon}
                                 </li>
                             ))}
                         </ul>
