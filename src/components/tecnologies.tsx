@@ -1,11 +1,45 @@
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { SiNestjs } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { FaLinux } from "react-icons/fa";
+
+
 export default function Tecnologies() {
-    const technologies = [
-        "JavaScript",
-        "TypeScript",
-        "Java",
-        "SQL",
-        "Docker",
+    const Langs = [
+        <IoLogoJavascript size={40}/>,
+        <SiTypescript size={40}/>,
+        <FaPython size={40}/>,
+        <FaJava size={40}/>,
+        <FaCss3Alt size={40}/>,
+        <FaHtml5 size={40}/>
     ];
+
+    const Frameworks = [
+        <FaReact size={40}/>,
+        <SiNestjs size={40}/>,
+        <SiSpring size={40}/>
+    ];
+
+    const Database = [
+        <BiLogoPostgresql size={40}/>,
+        <GrMysql size={40}/>
+    ]
+
+    const Tools = [
+        <FaDocker size={40}/>,
+        <FaGitAlt size={40}/>,
+        <FaLinux size={40}/>
+    ]
 
     return (
         <div className="flex flex-col items-center px-4 py-6 w-full sm:px-8 md:px-10 lg:px-16">
@@ -20,14 +54,44 @@ export default function Tecnologies() {
                     <span className="text-white text-xs font-mono">.....</span>
                 </div>
                 <div className="p-5 sm:p-6 md:p-7">
-                    <div className="text-lg font-bold mb-4 text-gray-800">Tecnologías que domino</div>
+                    <div className="text-lg font-bold mb-4 text-gray-800">Langs</div>
                     <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
-                        {technologies.map((tech) => (
-                            <li key={tech} className="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700 font-mono">
+                        {Langs.map((tech) => (
+                            <li key={tech} className="bg-gray-100 px-2 py-2 rounded-full text-sm text-gray-700 font-mono">
                                 {tech}
                             </li>
                         ))}
                     </ul>
+                    <div className="mt-4">
+                        <div className="text-lg font-bold mb-2 text-gray-800">Frameworks</div>
+                        <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
+                            {Frameworks.map((framework) => (
+                                <li key={framework} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {framework}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="mt-4">
+                        <div className="text-lg font-bold mb-2 text-gray-800">Database</div>
+                        <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
+                            {Database.map((db) => (
+                                <li key={db} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {db}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="mt-4">
+                        <div className="text-lg font-bold mb-2 text-gray-800">Tools</div>
+                        <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
+                            {Tools.map((tool) => (
+                                <li key={tool} className="bg-gray-100 px-3 py-2 rounded-full text-sm text-gray-700 font-mono">
+                                    {tool}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
