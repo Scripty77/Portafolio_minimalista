@@ -8,8 +8,8 @@ import "../App.css";
 export default function Header() {
 
     const music = {
-        artist: "Post Malone",
-        name: "Better Now",
+        artist: "Phatogram",
+        name: "Black Out Days",
     }
 
     return( 

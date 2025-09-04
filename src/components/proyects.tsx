@@ -52,7 +52,7 @@ export default function Proyects() {
                             <p className="text-gray-600 text-sm mb-2">{project.description}</p>
                             <div className="flex flex-wrap gap-2 mt-auto">
                                 {project.technologies.map((tech) => (
-                                    <span key={tech} className="bg-gray-200 px-2 py-0.5 rounded-full text-xs text-gray-700 font-mono">
+                                    <span key={tech} className="bg-blue-100 px-2 py-0.5 rounded-full text-xs text-gray-700 font-mono">
                                         {tech}
                                     </span>
                                 ))}
