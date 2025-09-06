@@ -20,12 +20,9 @@ export default function Tecnologies() {
         { id: "typescript", icon: <SiTypescript size={40}/> },
         { id: "python", icon: <FaPython size={40}/> },
         { id: "java", icon: <FaJava size={40}/> },
-        { id: "css3", icon: <FaCss3Alt size={40}/> },
-        { id: "html5", icon: <FaHtml5 size={40}/> }
     ];
 
     const Frameworks = [
-        { id: "react", icon: <FaReact size={40}/> },
         { id: "nestjs", icon: <SiNestjs size={40}/> },
         { id: "spring", icon: <SiSpring size={40}/> }
     ];
