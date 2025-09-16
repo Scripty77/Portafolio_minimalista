@@ -11,6 +11,7 @@ export default function Perfil() {
         github: "https://github.com/Scripty77",
         linkedin: "https://www.linkedin.com/in/jean-carlos-contreras-485485279/",
         area: "Estudiante Ing en Informatica",
+        cita: "Intento crear soluciones, y no morir en el intento",
     };
     return (
         <div className="px-4 py-6 sm:px-8 md:px-10 lg:px-16 w-full flex justify-center">
@@ -34,6 +35,7 @@ export default function Perfil() {
                     )}
                     <div className="text-xl font-bold text-gray-800">{profile.name}</div>
                     <div className="text-sm text-gray-600">Nivel: {profile.level}</div>
+                    <div className="text-gray-500 text-sm italic">"{profile.cita}"</div>
                     {profile.bio && (
                         <div className="text-gray-700 text-sm italic">{profile.bio}</div>
                     )}

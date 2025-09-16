@@ -20,10 +20,10 @@ const projects = [
         github: "https://github.com/Scripty77/Stela",
     },
     {
-        name:"Crud-Basico",
-        description:"Crud Basico con prisma como ORM",
-        technologies: ["Javascript","React","Prisma"],
-        github:"https://github.com/Scripty77/crud-basic",
+        name:"Analizador de Tendencias",
+        description:"Aplicacion para analizar tendencias en datos usando Python con gtk para la interfaz grafica",
+        technologies: ["Python","GTK"],
+        github:"https://github.com/Scripty77/analizador-de-tendencias",
     },
 ];
 
