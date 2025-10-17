@@ -5,8 +5,6 @@ import { FaDocker } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { SiNestjs } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { SiSpring } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaLinux } from "react-icons/fa";
 
@@ -16,12 +14,10 @@ export default function Tecnologies() {
         { id: "javascript", icon: <IoLogoJavascript size={40}/> },
         { id: "typescript", icon: <SiTypescript size={40}/> },
         { id: "python", icon: <FaPython size={40}/> },
-        { id: "java", icon: <FaJava size={40}/> },
     ];
 
     const Frameworks = [
         { id: "nestjs", icon: <SiNestjs size={40}/> },
-        { id: "spring", icon: <SiSpring size={40}/> }
     ];
 
     const Database = [

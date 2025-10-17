@@ -8,8 +8,8 @@ import "../App.css";
 export default function Header() {
 
     const music = {
-        artist: "Phatogram",
-        name: "Black Out Days",
+        artist: "Bad Bunny",
+        name: "Moscow Mule",
     }
 
     return( 
@@ -22,7 +22,7 @@ export default function Header() {
                         <FaFirefox size={20} />
                         <GoFileSubmodule size={20} />
                         <FaSpotify size={20} />
-                        <div className="overflow-hidden w-40 h-6 relative">
+                        <div className="overflow-hidden w-60 h-6 relative">
                             <span className="block whitespace-nowrap animate-marquee text-sm text-gray-700 will-change-transform">
                                 {music.artist} - {music.name}
                             </span>

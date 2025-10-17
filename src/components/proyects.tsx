@@ -8,12 +8,6 @@ const projects = [
         github: "https://github.com/Scripty77/space-invader",
     },
     {
-        name: "API Con Spring-Boot",
-        description: "API REST Aplicando Modelo Vista Controllador en Java ",
-        technologies: ["Java","MySql", "Docker"],
-        github: "https://github.com/Scripty77/Apispring",
-    },
-    {
         name: "Stela",
         description:"Stela es un Concepto para una plataforma de intercambio de cripto-activos con un estilo moderno",
         technologies: ["Javascript","React","Tailwindcss"],
